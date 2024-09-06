@@ -11,26 +11,31 @@ public class YushkevychAndriiAlgorythm : IRobotAlgorithm
 {
     public RobotCommand DoStep(IList<Robot.Common.Robot> robots, int robotToMoveIndex, Map map)
     {
-        var myRobot = robots[robotToMoveIndex];
-
-        var targetRobot = robots.Where(robot => robot.OwnerName != this.Author).OrderByDescending(robot => robot.Energy).FirstOrDefault();
-
-        var stations = map.Stations;
-
-        if (stations.Any(station => station.Position == myRobot.Position)) return new CollectEnergyCommand();
-        
-        var closestStation = stations.Where(station => robots.Where(robot => robot.OwnerName == Author)
-            .All(robot => station.Position != robot.Position))
-            .OrderByDescending(station => FindDistance(station, myRobot)).Reverse().FirstOrDefault();
-
-        if (closestStation == null) return new CreateNewRobotCommand();
-        
-        double cost = FindDistance(closestStation, myRobot);
-        
-        var destination = FindDestination(closestStation, myRobot, cost);
-        if(destination == myRobot.Position) return new CreateNewRobotCommand();
-        
-        return new MoveCommand() { NewPosition = destination };
+        var manager = Manager.GetManager(robots, robotToMoveIndex, map);
+        return manager.GetRobotCommand().Execute();
+        // var myRobot = robots[robotToMoveIndex];
+        //
+        // //var targetRobot = robots.Where(robot => robot.OwnerName != this.Author).OrderByDescending(robot => robot.Energy).FirstOrDefault();
+        //
+        // var stations = map.Stations;
+        //
+        // if (stations.Any(station => station.Position == myRobot.Position)) return new CollectEnergyCommand();
+        //
+        // var closestStation = stations
+        //     .Where(station => robots
+        //         .Where(robot => robot.OwnerName == Author)
+        //         .All(robot => station.Position != robot.Position))
+        //     .OrderByDescending(station => FindDistance(station, myRobot))
+        //     .Reverse()
+        //     .FirstOrDefault();
+        //
+        // if (closestStation == null) return new CreateNewRobotCommand();
+        //
+        // double cost = FindDistance(closestStation, myRobot);
+        //
+        // var destination = FindDestination(closestStation, myRobot, cost);
+        //
+        // return new MoveCommand() { NewPosition = destination };
     }
 
     private Position FindDestination(EnergyStation closestStation, Robot.Common.Robot myRobot, double cost)

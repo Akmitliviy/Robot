@@ -43,6 +43,10 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="CollectCommand.cs" />
+        <Compile Include="ICommand.cs" />
+        <Compile Include="Manager.cs" />
+        <Compile Include="OccupyStationCommand.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <Compile Include="YushkevychAndriiRobotAlgorythm.cs" />
     </ItemGroup>
