@@ -43,6 +43,7 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="BreedCommand.cs" />
         <Compile Include="CollectCommand.cs" />
         <Compile Include="ICommand.cs" />
         <Compile Include="Manager.cs" />

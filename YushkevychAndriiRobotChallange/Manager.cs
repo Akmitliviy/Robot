@@ -80,12 +80,12 @@ public class Manager
         
         foreach (var myRobot in _myRobots.Keys.ToList())
         {
-
-            if (_myRobots[myRobot] == null)
-                FindStation(myRobot);
-            else
+            switch (_myRobots[myRobot])
             {
-                if (_myRobots[myRobot] is OccupyStationCommand)
+                case null:
+                    FindStation(myRobot);
+                    break;
+                case OccupyStationCommand:
                 {
                     var command = _myRobots[myRobot] as OccupyStationCommand;
 
@@ -97,25 +97,40 @@ public class Manager
                     {
                         _myRobots[myRobot] = new OccupyStationCommand()
                         {
-                            TargetStation = command.TargetStation, 
+                            TargetStation = command.TargetStation,
                             GoToPosition = FindDestination(command.TargetStation,
                                 _robots[myRobot], FindDistance(command.TargetStation, _robots[myRobot]))
                         };
                     }
+
+                    break;
+                }
+                case CollectCommand:
+                {
+                    if (_robots[myRobot].Energy >= 250 && _myRobots.Count < 100)
+                    {
+                        _myRobots[myRobot] = new BreedCommand() { NewRobotEnergy = 100 };
+                    }
+
+                    break;
+                }
+                case BreedCommand:
+                {
+                    if (_robots[myRobot].Energy < 250)
+                    {
+                        _myRobots[myRobot] = new CollectCommand();
+                    }
+
+                    break;
                 }
             }
-
-
         }
-        
-        
-        
     }
 
     private static void FindStation(int myRobot)
     {
         
-        var distance = 200.0;
+        var distance = Math.Pow(_robots[myRobot].Energy, 2.0);
         EnergyStation? currentStation = null;
             
         foreach (var station in _map.Stations)
@@ -124,6 +139,12 @@ public class Manager
                 
             if(nextDistance < distance && !_occupiedEnergyStations.Contains(station))
             {
+                if (nextDistance < 0.00001)
+                {
+                    currentStation = null;
+                    _myRobots[myRobot] = new CollectCommand();
+                    break;
+                }
                 distance = nextDistance;
                 currentStation = station;
             }
@@ -149,9 +170,9 @@ public class Manager
             double fullDistance = Math.Sqrt(cost);
             double currentEnergy = myRobot.Energy;
 
-            for (double currentDistance = fullDistance; currentDistance > 0; --currentDistance)
+            for (double currentDistance = fullDistance, k = 1; currentDistance > 0; k++, currentDistance /= k)
             {
-                if (Math.Pow(currentDistance, 2.0) + Math.Pow(fullDistance - currentDistance, 2.0) <= currentEnergy)
+                if (Math.Pow(currentDistance, 2.0) * k <= currentEnergy)
                 {
                     double ratio = currentDistance / (fullDistance - currentDistance);
                     Position position = new Position(
