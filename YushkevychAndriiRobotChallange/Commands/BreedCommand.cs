@@ -9,7 +9,7 @@ public class BreedCommand : Command
     public override void Process()
     {
         
-        if (Algorithm.Robots?[Algorithm.RobotToMoveIndex].Energy < 250 || Algorithm.MyRobots?.Count == 100)
+        if (Algorithm.Robots?[Algorithm.RobotToMoveIndex].Energy < 200 || Algorithm.MyRobots?.Count == 100)
         {
             if (Algorithm.Robots?[Algorithm.RobotToMoveIndex].Position
                 == Algorithm.OccupiedEnergyStations?[Algorithm.RobotToMoveIndex].Position)
@@ -31,7 +31,7 @@ public class BreedCommand : Command
                 var station = Algorithm.FindStation(Algorithm.RobotToMoveIndex);
 
                 if (station is null)
-                    throw new NoAvailableStationException("Could not find station to move to in BreedCommand");
+                    Algorithm.TransitionTo(new CollectCommand { TargetStation = station });
 
                 if (station.Position == Algorithm.Robots?[Algorithm.RobotToMoveIndex].Position)
                     Algorithm.TransitionTo(new CollectCommand { TargetStation = station });

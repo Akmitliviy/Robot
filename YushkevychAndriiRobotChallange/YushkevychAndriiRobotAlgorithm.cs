@@ -21,13 +21,12 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
     public RobotCommand DoStep(IList<Robot.Common.Robot> robots, int robotToMoveIndex, Map map)
     {
         SetupData(robots, robotToMoveIndex, map);
-        //CalculateStrategy();
         var command = GetRobotCommand();
         if (command is null)
         {
             var station = FindStation(robotToMoveIndex);
             if (station is null)
-                throw new NoAvailableStationException("Could not find station to move to in DoStep");
+                TransitionTo(new CollectCommand{TargetStation = station});
             
             if(station.Position == Robots?[RobotToMoveIndex].Position)
                 TransitionTo(new CollectCommand{TargetStation = station});
@@ -95,7 +94,7 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
 
         var distance = Math.Pow(Convert.ToDouble(Robots[myRobot].Energy), 2.0);
         EnergyStation? currentStation = null;
-
+        
         foreach (var station in Map.Stations)
         {
             var nextDistance = Movement.FindDistance(station.Position, Robots[myRobot]).Distance;
