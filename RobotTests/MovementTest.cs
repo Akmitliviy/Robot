@@ -1,10 +1,8 @@
-using NUnit.Framework;
-using System.Collections.Generic;
-using YushkevychAndriiRobotChallange;
 using Robot.Common;
-using System.Reflection;
+using YushkevychAndriiRobotChallange;
+using YushkevychAndriiRobotChallange.Commands;
 
-namespace YushkevychAndriiRobotChallange.Tests
+namespace RobotTests
 {
     [TestFixture]
     public class MovementTest
@@ -12,7 +10,7 @@ namespace YushkevychAndriiRobotChallange.Tests
     {
         private IList<Robot.Common.Robot> _robots;
         private Map _map;
-        private YushkevychAndriiAlgorythm _algorithm;
+        private YushkevychAndriiAlgorithm _algorithm;
         
         [SetUp]
         public void SetUp()
@@ -36,12 +34,18 @@ namespace YushkevychAndriiRobotChallange.Tests
                 }
             };
 
-            _algorithm = new YushkevychAndriiAlgorythm();
+            _algorithm = new YushkevychAndriiAlgorithm();
         }
 
         [Test]
         public void OneRobotGetToStation()
         {
+            var newPosition = new Position(4, 5);
+            var oldPosition = new Position(1, 2);
+            
+            var newX = (2 * newPosition.X - oldPosition.X) % 100;
+            var newY = (2 * newPosition.Y - oldPosition.Y) % 100;
+            
             _algorithm.DoStep(_robots, 0, _map);
             var command = _algorithm.GetRobotCommand();
 

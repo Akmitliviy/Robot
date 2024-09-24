@@ -43,12 +43,15 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="BreedCommand.cs" />
-        <Compile Include="CollectCommand.cs" />
-        <Compile Include="ICommand.cs" />
-        <Compile Include="OccupyStationCommand.cs" />
+        <Compile Include="Commands\BreedCommand.cs" />
+        <Compile Include="Commands\CollectCommand.cs" />
+        <Compile Include="Commands\Command.cs" />
+        <Compile Include="Commands\OccupyStationCommand.cs" />
+        <Compile Include="Exceptions\NoAvailableStationException.cs" />
+        <Compile Include="Exceptions\RobotsNullReferenceException.cs" />
+        <Compile Include="Movement.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="YushkevychAndriiRobotAlgorythm.cs" />
+        <Compile Include="YushkevychAndriiRobotAlgorithm.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

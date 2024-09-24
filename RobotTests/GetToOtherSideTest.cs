@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using YushkevychAndriiRobotChallange;
 using Robot.Common;
 using System.Reflection;
+using YushkevychAndriiRobotChallange.Commands;
 
 namespace YushkevychAndriiRobotChallange.Tests
 {
@@ -12,7 +13,7 @@ namespace YushkevychAndriiRobotChallange.Tests
     {
         private IList<Robot.Common.Robot> _robots;
         private Map _map;
-        private YushkevychAndriiAlgorythm _algorithm;
+        private YushkevychAndriiAlgorithm _algorithm;
         
         [SetUp]
         public void SetUp()
@@ -43,7 +44,7 @@ namespace YushkevychAndriiRobotChallange.Tests
                 }
             };
 
-            _algorithm = new YushkevychAndriiAlgorythm();
+            _algorithm = new YushkevychAndriiAlgorithm();
         }
 
         [Test]
