@@ -24,7 +24,7 @@ namespace YushkevychAndriiRobotChallange.Tests
                 Stations = new List<EnergyStation>
                 {
                     new (){Position = new Position(99, 0)},
-                    new (){Position = new Position(0, 99)}
+                    new (){Position = new Position(0, 95)}
                 }
             };
 
@@ -38,8 +38,8 @@ namespace YushkevychAndriiRobotChallange.Tests
                 },
                 new()
                 {
-                    Position = new Position(3, 0),
-                    Energy = 150,
+                    Position = new Position(3, 3),
+                    Energy = 70,
                     OwnerName = "YushkevychAndrii"
                 }
             };
@@ -64,6 +64,14 @@ namespace YushkevychAndriiRobotChallange.Tests
             
             _algorithm.DoStep(_robots, 1, _map);
             
+            command = _algorithm.GetRobotCommand();
+
+            Assert.IsInstanceOf<OccupyStationCommand>(command);
+
+            occupyStationCommand = command as OccupyStationCommand;
+            _robots[1].Position = occupyStationCommand?.GoToPosition;
+            
+            _algorithm.DoStep(_robots, 1, _map);
             command = _algorithm.GetRobotCommand();
 
             Assert.IsInstanceOf<OccupyStationCommand>(command);

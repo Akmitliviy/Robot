@@ -20,15 +20,15 @@ public class OccupyStationCommand : Command
             {
                 TargetStation = command.TargetStation,
                 GoToPosition = Movement.FindDestination(
-                    command.TargetStation,
+                    command.TargetStation.Position,
                     Algorithm.Robots?[Algorithm.RobotToMoveIndex], 
-                    Movement.FindDistance(command.TargetStation, Algorithm.Robots?[Algorithm.RobotToMoveIndex]))
+                    Movement.FindDistance(command.TargetStation.Position, Algorithm.Robots?[Algorithm.RobotToMoveIndex]))
             });
         }
     }
 
     public override RobotCommand Execute()
     {
-        return new MoveCommand(){NewPosition = GoToPosition};
+        return new MoveCommand{NewPosition = GoToPosition};
     }
 }

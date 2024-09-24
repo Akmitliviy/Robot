@@ -39,9 +39,9 @@ public class BreedCommand : Command
                     Algorithm.TransitionTo(new OccupyStationCommand
                     {
                         TargetStation = station,
-                        GoToPosition = Movement.FindDestination(station,
+                        GoToPosition = Movement.FindDestination(station.Position,
                             Algorithm.Robots?[Algorithm.RobotToMoveIndex],
-                            Movement.FindDistance(station, Algorithm.Robots?[Algorithm.RobotToMoveIndex]))
+                            Movement.FindDistance(station.Position, Algorithm.Robots?[Algorithm.RobotToMoveIndex]))
                     });
             }
         }

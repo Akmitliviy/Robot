@@ -27,14 +27,18 @@ public class CollectCommand : Command
                 Algorithm.TransitionTo(new OccupyStationCommand
                 {
                     TargetStation = station,
-                    GoToPosition = Movement.FindDestination(station,
+                    GoToPosition = Movement.FindDestination(station.Position,
                         Algorithm.Robots?[Algorithm.RobotToMoveIndex], 
-                        Movement.FindDistance(station, Algorithm.Robots?[Algorithm.RobotToMoveIndex]))
+                        Movement.FindDistance(station.Position, Algorithm.Robots?[Algorithm.RobotToMoveIndex]))
                 });
         }
         else if (Algorithm.Robots[Algorithm.RobotToMoveIndex].Energy >= 250 && Algorithm.MyRobots?.Count < 100)
         {
             Algorithm.TransitionTo(new BreedCommand { NewRobotEnergy = 100 });
+            
+        }else if (Algorithm.Robots[Algorithm.RobotToMoveIndex].Energy >= 250 && Algorithm.MyRobots?.Count == 100)
+        {
+            
         }
     }
 

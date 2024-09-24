@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Robot.Common;
 using YushkevychAndriiRobotChallange.Commands;
 using YushkevychAndriiRobotChallange.Exceptions;
@@ -7,6 +8,7 @@ using YushkevychAndriiRobotChallange.Exceptions;
 #nullable enable
 
 namespace YushkevychAndriiRobotChallange;
+
 
 public class YushkevychAndriiAlgorithm : IRobotAlgorithm
 {
@@ -25,7 +27,7 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
         {
             var station = FindStation(robotToMoveIndex);
             if (station is null)
-                throw new NoAvailableStationException("Could not find station to move to");
+                throw new NoAvailableStationException("Could not find station to move to in DoStep");
             
             if(station.Position == Robots?[RobotToMoveIndex].Position)
                 TransitionTo(new CollectCommand{TargetStation = station});
@@ -33,22 +35,21 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
                 TransitionTo(new OccupyStationCommand
                 {
                     TargetStation = station,
-                    GoToPosition = Movement.FindDestination(station,
+                    GoToPosition = Movement.FindDestination(station.Position,
                         Robots?[RobotToMoveIndex], 
-                        Movement.FindDistance(station, Robots?[RobotToMoveIndex]))
+                        Movement.FindDistance(station.Position, Robots?[RobotToMoveIndex]))
                 });
             
-            command = GetRobotCommand();
         }
-        command?.Process();
-        var result = command?.Execute();
+        GetRobotCommand()?.Process();
+        var result = GetRobotCommand()?.Execute();
 
         return result ?? throw new InvalidOperationException();
     }
 
     private void SetupData(IList<Robot.Common.Robot> robots, int robotToMoveIndex, Map map)
     {
-        MyRobots ??= new Dictionary<int, Command>()!;
+        MyRobots ??= new Dictionary<int, Command?>();
         OccupiedEnergyStations ??= new Dictionary<int, EnergyStation>();
         Map ??= map;
 
@@ -92,12 +93,12 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
         if (OccupiedEnergyStations == null)
             throw new RobotsNullReferenceException("_occupiedEnergyStations is null");
 
-        var distance = Math.Pow(Robots[myRobot].Energy, 2.0);
+        var distance = Math.Pow(Convert.ToDouble(Robots[myRobot].Energy), 2.0);
         EnergyStation? currentStation = null;
 
         foreach (var station in Map.Stations)
         {
-            var nextDistance = Movement.FindDistance(station, Robots[myRobot]);
+            var nextDistance = Movement.FindDistance(station.Position, Robots[myRobot]).Distance;
 
             if (nextDistance < distance && !OccupiedEnergyStations.Values.Contains(station))
             {
@@ -106,7 +107,6 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
                 
                 if (nextDistance < 0.00001)
                 {
-                    //MyRobots[myRobot] = new CollectCommand { TargetStation = station };
                     break;
                 }
 
@@ -117,12 +117,6 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
         {
             OccupiedEnergyStations.Add(myRobot, currentStation);
             return currentStation;
-            // MyRobots[myRobot] = new OccupyStationCommand
-            // {
-            //     TargetStation = currentStation,
-            //     GoToPosition = Movement.FindDestination(currentStation,
-            //         Robots[myRobot], distance)
-            // };
         }
 
         return null;
