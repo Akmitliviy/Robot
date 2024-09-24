@@ -5,7 +5,7 @@ namespace YushkevychAndriiRobotChallange.Commands;
 
 public abstract class Command
 {
-    protected YushkevychAndriiAlgorithm Algorithm = null;
+    protected YushkevychAndriiAlgorithm Algorithm;
 
 
     public void SetAlgorithm(YushkevychAndriiAlgorithm context)

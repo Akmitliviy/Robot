@@ -31,7 +31,7 @@ public class BreedCommand : Command
                 var station = Algorithm.FindStation(Algorithm.RobotToMoveIndex);
 
                 if (station is null)
-                    throw new NoAvailableStationException("Could not find station to move to");
+                    throw new NoAvailableStationException("Could not find station to move to in BreedCommand");
 
                 if (station.Position == Algorithm.Robots?[Algorithm.RobotToMoveIndex].Position)
                     Algorithm.TransitionTo(new CollectCommand { TargetStation = station });
@@ -49,6 +49,6 @@ public class BreedCommand : Command
 
     public override RobotCommand Execute()
     {
-        return new CreateNewRobotCommand(){NewRobotEnergy = this.NewRobotEnergy};
+        return new CreateNewRobotCommand(){NewRobotEnergy = NewRobotEnergy};
     }
 }

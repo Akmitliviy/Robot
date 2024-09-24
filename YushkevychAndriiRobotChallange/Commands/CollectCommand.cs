@@ -19,7 +19,7 @@ public class CollectCommand : Command
             var station = Algorithm.FindStation(Algorithm.RobotToMoveIndex);
             
             if (station is null)
-                throw new NoAvailableStationException("Could not find station to move to");
+                throw new NoAvailableStationException("Could not find station to move to in CollectCommand");
             
             if(station.Position == Algorithm.Robots?[Algorithm.RobotToMoveIndex].Position)
                 Algorithm.TransitionTo(new CollectCommand{TargetStation = station});
