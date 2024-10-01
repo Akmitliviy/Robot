@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange.csproj": {
-                "projectPath": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange.csproj"
+              "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallenge\\YushkevychAndriiRobotChallenge.csproj": {
+                "projectPath": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallenge\\YushkevychAndriiRobotChallenge.csproj"
               }
             }
           }
@@ -94,11 +94,11 @@
         }
       }
     },
-    "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange.csproj": {
+    "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallenge\\YushkevychAndriiRobotChallenge.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange.csproj",
-        "projectName": "YushkevychAndriiRobotChallange",
-        "projectPath": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange.csproj",
+        "projectUniqueName": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallenge\\YushkevychAndriiRobotChallenge.csproj",
+        "projectName": "YushkevychAndriiRobotChallenge",
+        "projectPath": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallenge\\YushkevychAndriiRobotChallenge.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

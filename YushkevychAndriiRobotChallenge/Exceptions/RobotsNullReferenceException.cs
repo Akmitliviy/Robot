@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace YushkevychAndriiRobotChallange.Exceptions;
+namespace YushkevychAndriiRobotChallenge.Exceptions;
 
 [Serializable]
 public class RobotsNullReferenceException : Exception

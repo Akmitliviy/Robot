@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\YushkevychAndriiRobotChallange\YushkevychAndriiRobotChallange.csproj" />
+      <ProjectReference Include="..\YushkevychAndriiRobotChallenge\YushkevychAndriiRobotChallenge.csproj" />
     </ItemGroup>
 
     <ItemGroup>

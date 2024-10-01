@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b13bcd8-c21a-4042-b115-178b40e6a652" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RobotTests/CommandSwitch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YushkevychAndriiRobotChallange/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YushkevychAndriiRobotChallange/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YushkevychAndriiRobotChallange/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.YushkevychAndriiRobotChallange/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/BreedTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/BreedTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/GetToOtherSideTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/MovementTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/MovementTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/RobotTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/RobotTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/RobotTests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/RobotTests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/RobotTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/RobotTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/RobotTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/RobotTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/YushkevychAndriiRobotChallange.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/bin/Debug/net8.0/YushkevychAndriiRobotChallange.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/RobotTests.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/ref/RobotTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/ref/RobotTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/refint/RobotTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/Debug/net8.0/refint/RobotTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/RobotTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/RobotTests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RobotTests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/RobotTests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange.sln" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Commands/BreedCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Commands/BreedCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Commands/CollectCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Commands/CollectCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Commands/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Commands/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Commands/OccupyStationCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Commands/OccupyStationCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Exceptions/NoAvailableStationException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Exceptions/NoAvailableStationException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Exceptions/RobotsNullReferenceException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Exceptions/RobotsNullReferenceException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/YushkevychAndriiRobotAlgorithm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/YushkevychAndriiRobotAlgorithm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/YushkevychAndriiRobotChallange.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/YushkevychAndriiRobotChallenge.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/bin/Debug/Robot.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/bin/Debug/Robot.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/bin/Debug/YushkevychAndriiRobotChallange.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/bin/Debug/YushkevychAndriiRobotChallenge.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/bin/Debug/YushkevychAndriiRobotChallange.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/bin/Debug/YushkevychAndriiRobotChallenge.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/obj/Debug/Yushkevy.BD4BD797.Up2Date" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/obj/Debug/Yushkevy.BD4BD797.Up2Date" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/obj/Debug/YushkevychAndriiRobotChallange.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/obj/Debug/YushkevychAndriiRobotChallange.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/obj/Debug/YushkevychAndriiRobotChallange.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/obj/Debug/YushkevychAndriiRobotChallange.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/obj/Debug/YushkevychAndriiRobotChallange.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/obj/Debug/YushkevychAndriiRobotChallange.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/obj/Debug/YushkevychAndriiRobotChallange.dll" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/obj/Debug/YushkevychAndriiRobotChallange.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YushkevychAndriiRobotChallange/obj/Debug/YushkevychAndriiRobotChallange.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/YushkevychAndriiRobotChallenge/obj/Debug/YushkevychAndriiRobotChallange.pdb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/156b1dbdd85d4d4093d3f4af8080c42b4600/a9/713516ca/Map.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62b4b0f1897446dc9dc4634ceb6178f43400/9f/07a7db38/Runner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e585f5e2b21741c8a3a65b4f9abfa5e8572e20/4d/a7fc8d2d/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e585f5e2b21741c8a3a65b4f9abfa5e8572e20/a0/01a8ff6a/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46a322d26154b982566e1817203e5452c91223f93b0e392d9c5b4806696fdc1/Assert.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Commands/BreedCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Commands/CollectCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Commands/OccupyStationCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Exceptions/RobotsNullReferenceException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YushkevychAndriiRobotChallenge/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/YushkevychAndriiRobotChallenge/YushkevychAndriiRobotAlgorithm.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2lYsVQoE8zfZckwnZxG9FALS9Qj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Process.10612:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.11208:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.11292:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.12932:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.15628:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.15648:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.16388:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.16860:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.17296:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.17360:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.18116:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.18276:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.18420:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.18488:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.19232:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.19416:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.3192:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.3204:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.3676:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.6504:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.7160:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Process.7188:RobotChallenge.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;c9b3ef54-22ee-4827-9553-f2501b5f7a10.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CSharpTypeConversionHintsOptions&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b13bcd8-c21a-4042-b115-178b40e6a652" name="Changes" comment="" />
+      <created>1725368369252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725368369252</updated>
+      <workItem from="1725368370398" duration="653000" />
+      <workItem from="1725452166481" duration="5321000" />
+      <workItem from="1725462795760" duration="10388000" />
+      <workItem from="1725474675901" duration="1184000" />
+      <workItem from="1725531903113" duration="2564000" />
+      <workItem from="1725550651341" duration="10336000" />
+      <workItem from="1725616221896" duration="10703000" />
+      <workItem from="1725706834025" duration="5285000" />
+      <workItem from="1725969004905" duration="3113000" />
+      <workItem from="1726423615778" duration="19213000" />
+      <workItem from="1726493218433" duration="3451000" />
+      <workItem from="1727112183918" duration="2343000" />
+      <workItem from="1727132876960" duration="35695000" />
+      <workItem from="1727173231142" duration="3130000" />
+      <workItem from="1727176982560" duration="3055000" />
+      <workItem from="1727803472427" duration="6994000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

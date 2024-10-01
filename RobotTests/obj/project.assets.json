@@ -378,13 +378,13 @@
           }
         }
       },
-      "YushkevychAndriiRobotChallange/1.0.0": {
+      "YushkevychAndriiRobotChallenge/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/YushkevychAndriiRobotChallange.dll": {}
+          "bin/placeholder/YushkevychAndriiRobotChallenge.dll": {}
         },
         "runtime": {
-          "bin/placeholder/YushkevychAndriiRobotChallange.dll": {}
+          "bin/placeholder/YushkevychAndriiRobotChallenge.dll": {}
         }
       }
     }
@@ -980,10 +980,10 @@
         "version.txt"
       ]
     },
-    "YushkevychAndriiRobotChallange/1.0.0": {
+    "YushkevychAndriiRobotChallenge/1.0.0": {
       "type": "project",
-      "path": "../YushkevychAndriiRobotChallange/YushkevychAndriiRobotChallange.csproj",
-      "msbuildProject": "../YushkevychAndriiRobotChallange/YushkevychAndriiRobotChallange.csproj"
+      "path": "../YushkevychAndriiRobotChallenge/YushkevychAndriiRobotChallenge.csproj",
+      "msbuildProject": "../YushkevychAndriiRobotChallenge/YushkevychAndriiRobotChallenge.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -992,7 +992,7 @@
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
       "NUnit3TestAdapter >= 4.5.0",
-      "YushkevychAndriiRobotChallange >= 1.0.0",
+      "YushkevychAndriiRobotChallenge >= 1.0.0",
       "coverlet.collector >= 6.0.0"
     ]
   },
@@ -1028,8 +1028,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange.csproj": {
-              "projectPath": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallange.csproj"
+            "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallenge\\YushkevychAndriiRobotChallenge.csproj": {
+              "projectPath": "C:\\Users\\Akmitliviy\\RiderProjects\\YushkevychAndriiRobotChallange\\YushkevychAndriiRobotChallenge\\YushkevychAndriiRobotChallenge.csproj"
             }
           }
         }

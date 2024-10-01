@@ -1,11 +1,8 @@
-﻿using NUnit.Framework;
-using System.Collections.Generic;
-using YushkevychAndriiRobotChallange;
-using Robot.Common;
-using System.Reflection;
-using YushkevychAndriiRobotChallange.Commands;
+﻿using Robot.Common;
+using YushkevychAndriiRobotChallenge;
+using YushkevychAndriiRobotChallenge.Commands;
 
-namespace YushkevychAndriiRobotChallange.Tests
+namespace RobotTests
 {
     [TestFixture]
     public class BreedTest
@@ -41,7 +38,7 @@ namespace YushkevychAndriiRobotChallange.Tests
         }
 
         [Test]
-        public void OneRobotGetToStation()
+        public void RobotCollectsThanBreeds()
         {
             _algorithm.DoStep(_robots, 0, _map);
             var command = _algorithm.GetRobotCommand();

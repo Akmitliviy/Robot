@@ -1,6 +1,6 @@
 ﻿using Robot.Common;
 
-namespace YushkevychAndriiRobotChallange.Commands;
+namespace YushkevychAndriiRobotChallenge.Commands;
 
 public class OccupyStationCommand : Command
 {

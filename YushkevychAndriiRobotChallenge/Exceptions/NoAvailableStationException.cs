@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace YushkevychAndriiRobotChallange.Exceptions;
+namespace YushkevychAndriiRobotChallenge.Exceptions;
 
 public class NoAvailableStationException : Exception
 {

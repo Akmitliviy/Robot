@@ -1,7 +1,7 @@
 ﻿using Robot.Common;
-using YushkevychAndriiRobotChallange.Exceptions;
+using YushkevychAndriiRobotChallenge.Exceptions;
 
-namespace YushkevychAndriiRobotChallange.Commands;
+namespace YushkevychAndriiRobotChallenge.Commands;
 
 public class BreedCommand : Command
 {

@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Robot.Common;
-using YushkevychAndriiRobotChallange.Commands;
-using YushkevychAndriiRobotChallange.Exceptions;
+using YushkevychAndriiRobotChallenge.Commands;
+using YushkevychAndriiRobotChallenge.Exceptions;
 
 #nullable enable
 
-namespace YushkevychAndriiRobotChallange;
+namespace YushkevychAndriiRobotChallenge;
 
 
 public class YushkevychAndriiAlgorithm : IRobotAlgorithm
@@ -28,15 +27,15 @@ public class YushkevychAndriiAlgorithm : IRobotAlgorithm
             if (station is null)
                 TransitionTo(new CollectCommand{TargetStation = station});
             
-            if(station.Position == Robots?[RobotToMoveIndex].Position)
+            if(station?.Position == Robots?[RobotToMoveIndex].Position)
                 TransitionTo(new CollectCommand{TargetStation = station});
             else
                 TransitionTo(new OccupyStationCommand
                 {
                     TargetStation = station,
-                    GoToPosition = Movement.FindDestination(station.Position,
+                    GoToPosition = Movement.FindDestination(station?.Position,
                         Robots?[RobotToMoveIndex], 
-                        Movement.FindDistance(station.Position, Robots?[RobotToMoveIndex]))
+                        Movement.FindDistance(station?.Position, Robots?[RobotToMoveIndex]))
                 });
             
         }

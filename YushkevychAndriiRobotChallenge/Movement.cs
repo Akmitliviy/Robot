@@ -1,7 +1,7 @@
 ﻿using System;
 using Robot.Common;
 
-namespace YushkevychAndriiRobotChallange;
+namespace YushkevychAndriiRobotChallenge;
 
 public struct Path
 {

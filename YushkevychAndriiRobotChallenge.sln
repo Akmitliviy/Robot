@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YushkevychAndriiRobotChallange", "YushkevychAndriiRobotChallange\YushkevychAndriiRobotChallange.csproj", "{F5A4F456-9199-45CA-A934-E6EC972A3737}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YushkevychAndriiRobotChallenge", "YushkevychAndriiRobotChallenge\YushkevychAndriiRobotChallenge.csproj", "{F5A4F456-9199-45CA-A934-E6EC972A3737}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotTests", "RobotTests\RobotTests.csproj", "{3E2D6B10-0227-403D-85B8-3C16C6BD4E27}"
 EndProject
